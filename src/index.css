@@ -1,13 +1,437 @@
-body {
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Declaring global variables*/
+:root{
+  --bgcolor: rgb(253, 249, 238);
+  --p-color: goldenrod;
+  --t-color: grey;
+  --main-t-color: goldenrod;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 242, 207);
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: goldenrod;
+}
+
+/*Styling navbar*/
+.navbar-bg{
+  background-color: var(--bgcolor);
+  padding: 2rem;
+  z-index: 99;
+  position: relative;
+}
+
+.container .navbar-brand{
+  font-size: 2.5rem;
+}
+
+.navbar-nav li{
+  padding: 1rem;
+}
+
+.navbar-nav li a{
+  font-size: 1.5rem;
+  font-weight: lighter;
+  position: relative;
+}
+
+.navbar-nav li a:hover{
+  color: var(--p-color) !important;
+  text-shadow: 0 0.2rem 0.01rem goldenrod;
+}
+
+.btn-style{
+  width: 12rem;
+  height: 4rem;
+  border-radius: 1rem !important;
+  color: var(--bgcolor);
+  background-color: var(--p-color) !important;
+  padding: 2rem;
+}
+
+.btn-style:hover{
+  border: 0.1rem solid var(--p-color);
+  background-color: transparent !important;
+  color: var(--p-color) !important;
+  box-shadow: 0 0.2rem 0.3rem var(--p-color);
+}
+
+.d-flex #first{
+  margin-right: 1rem;
+}
+
+
+
+/* --- Hero Section Starts  here--- */
+header{
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.display-2{
+  padding-top: 30px;
+}
+.main-hero container{
+  height: 80vh;
+  display: flex;
+}
+
+
+/*Make online payment.*/
+.main-hero container h1{
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.main-hero-para{
+  font-size: 1.4rem;
+  color: black;
+  margin: 3rem 0 3rem 0;
+  font-weight: lighter;
+  width: 80%;
+}
+
+.main-hero container h3{
+  font-weight: lighter;
+}
+
+.input-group{
+  position: relative !important;
+}
+
+.form-control-text{
+  position: absolute;
+  height: 5rem;
+  border: none;
+  outline-style: none;
+  padding-left: 1.5rem !important;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.input-group-button{
+  position:absolute;
+  right: 26%;
+  top: 0.5rem !important;
+  color: var(--bgcolor);
+  background-color: var(--p-color);
+  height: 4rem;
+  width: 15%;
+  border-radius: 2rem !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/*Right side of header section*/
+.main-herosection-images{
+  position: relative;
+}
+
+.main-herosection-images img{
+  width: 60% !important;
+  height: 75% !important;
+  margin-top: 5rem;
+  box-shadow: 0 0.2rem 0.3rem var(--p-color);
+  border-radius: 1.5rem;
+  position: absolute;
+}
+
+.main-herosection-images .main-hero-img2{
+  position: absolute;
+  width: 30% !important;
+  height: 30% !important;
+  left: 55%;
+  top: -10%;
+}
+
+
+
+
+
+
+
+/** Part4-- Work Section starts here**/
+
+
+.row{
+  padding-top: 30px;
+}
+
+.work-container{
+  width: 80vw;
+  padding: 5rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0,0,0,0.1);
+  margin-top: -12rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.work-container .main-heading{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  word-spacing: 0.6rem;
+  margin-bottom: 3rem;
+}
+
+.work-container-subdiv{
+  padding: 0 10rem;
+}
+
+.work-container .sub-heading{
+  font-size: 2rem;
+  font-weight: normal;
+  color: black;
+}
+
+.fontawesome-style{
+  font-size: 2.5rem;
+  background-color: var(--bgcolor);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+
+/** Work Section ends here**/
+
+
+
+/**Part5,6 -- About Us section starts here**/
+.services-leftside-image img{
+  width: 50%;
+  height: 65%;
+  margin-top: 10rem;
+  box-shadow: rgba(0,0,0,0.25) 0px 0.8rem 0.8rem;
+  text-align: center;
+  border-radius: 1.6rem;
+}
+
+.services-list .mini-title{
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 3rem 0;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.services-list .main-heading{
+  color: black;
+}
+
+.our-services-info{
+  margin-top: 10rem;
+}
+
+.our-services-info .services .our-services-number{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.1rem solid var(--p-color);
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+
+.our-services-info .services .our-services-data{
+  text-align: left;
+  padding-left: 20px;
+}
+
+.our-services-info .services .our-services-data p{
+  margin: 1rem 0;
+}
+/**Part5,6 ends here**/
+
+
+/** Part7--- Our Services section **/
+
+.service-main-container{
+  margin-top: 5rem;
+  padding: 5rem 0;
+}
+
+.service-main-container .main-heading{
+  margin: 3rem 0;
+}
+
+.work-container-subdiv{
+  box-shadow: 0 0.1rem 0.4rem rgba(255, 242, 207,0.6);
+}
+
+.work-container-subdiv:hover{
+  background: rgb(247, 246, 246);
+}
+
+.work-container-subdiv .main-hero-para{
+  width: 100%; /**to remove space from right*/
+}
+
+.service-main-container .service-container .row .work-container-subdiv .fontawesome-style{
+  text-align: left;
+  margin: 2rem 0;
+}
+
+@media (min-width:1400px)
+{
+  .service-container .col-xxl-4{
+    flex: 0 0 auto;
+    width: 30% !important;
+  }
+}
+
+@media (min-width:992px)
+{
+  .service-container .col-lg-4{
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: 2rem auto;
+  }
+}
+
+/** Part7 ends here**/
+
+
+
+/** Part8 Contact Section UI **/
+
+
+/*.contactus-section{
+  margin: 10rem;
+}
+
+.contact-leftside img{
+  min-width: 90%;
+  max-height: 30rem;
+  height: auto;
+}
+
+.contact-input{
+  margin-bottom: 2rem;
+}*/
+
+
+
+.contactus-section {
+  margin: 15rem 0;
+}
+
+.contact-leftside img {
+  min-width: 80%;
+  max-height: 30rem;
+  height: auto;
+}
+
+.contact-input{
+  margin-bottom: 4rem;
+}
+
+.contact-input .form-control:hover{
+  background-color: transparent !important;
+  color: var(--p-color) !important;
+  box-shadow: 0 0.2rem 0.3rem var(--p-color);
+}
+
+.contact-input #msg{
+  height: 5rem !important;
+}
+
+
+.contact-rightside form .form-control {
+  border: 1px solid #ced4da;
+  height: 5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  font-weight: lighter;
+}
+
+.contact-rightside form .form-check-input {
+  margin-bottom: 4px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.form-checkbox-style {
+  margin: 4rem 0;
+}
+
+.contact-rightside .form-check .form-check-label{
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.contact-rightside btn-style{
+  font-size: large;
+}
+
+.contact-rightside form .main-hero-para {
+  font-weight: lighter;
+  width: 75%;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+/**Part9--> Footer Section **/
+.footer-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+
+/** Error loading page **/
+.error{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+@media (max-width:990px)
+{
+  .navbar .navbar-collapse{
+    margin-top: 1rem;
+    background-color: var(--bgcolor);
+  }
+
+  .input-style .btn-style{
+    font-size: 1.2rem;
+  }
 }
