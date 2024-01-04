@@ -55,7 +55,6 @@ const AboutUs = () => {
             </section>
 
             { /*Part 7 */}
-
             <section className="temp-section Our Services">
                 <div className="container mb-5">
                     <div className="row">

@@ -20,7 +20,7 @@ const Navbar = () => {
                     onClick={()=> setdis(!dis)}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className={`collapse navbar-collapse ${dis ? "show": ""}`} id="navbarSupportedContent">
+                    <div className={`collapse navbar-collapse ${dis ? "show": ""}`}>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/">Home</NavLink>

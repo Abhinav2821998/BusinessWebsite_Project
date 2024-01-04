@@ -1,6 +1,5 @@
 import React from "react";
 import WorkApi from "./API/workApi";
-import Card from "./Card";
 import './index.css';
 import { useState } from "react";
 
@@ -25,7 +24,7 @@ const Function = () => {
                         {
                             data.map((currentEle) => {
 
-                                const{id,logo,title,info} = currentEle;
+                                const{id,logo,title,inform} = currentEle;
 
                                 return (
                                     <>
@@ -35,7 +34,7 @@ const Function = () => {
                                         <i className={`fontawesome-style ${logo}`}></i>
                                         <h2 className="sub-heading">{title}</h2>
                                         <p className="main-hero-para w-100">
-                                            {info}
+                                            {inform}
                                         </p>
 
                                     </div>

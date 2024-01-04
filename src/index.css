@@ -28,7 +28,9 @@ h1,h2,h3,h4,h5,h6{
   color: goldenrod;
 }
 
-/*Styling navbar*/
+
+
+/*Part2--->Styling navbar*/
 .navbar-bg{
   background-color: var(--bgcolor);
   padding: 2rem;
@@ -157,8 +159,8 @@ header{
 
 .main-herosection-images .main-hero-img2{
   position: absolute;
-  width: 30% !important;
-  height: 30% !important;
+  width: 40% !important;
+  height: 40% !important;
   left: 55%;
   top: -10%;
 }
@@ -221,8 +223,8 @@ header{
 
 /**Part5,6 -- About Us section starts here**/
 .services-leftside-image img{
-  width: 50%;
-  height: 65%;
+  width: 60%;
+  height: 60%;
   margin-top: 10rem;
   box-shadow: rgba(0,0,0,0.25) 0px 0.8rem 0.8rem;
   text-align: center;
@@ -267,6 +269,8 @@ header{
 /**Part5,6 ends here**/
 
 
+
+
 /** Part7--- Our Services section **/
 
 .service-main-container{
@@ -279,11 +283,11 @@ header{
 }
 
 .work-container-subdiv{
-  box-shadow: 0 0.1rem 0.4rem rgba(255, 242, 207,0.6);
+  box-shadow: 0 0.1rem 0.6rem rgba(254, 225, 143, 0.6);
 }
 
 .work-container-subdiv:hover{
-  background: rgb(247, 246, 246);
+  background: rgb(252, 252, 252);
 }
 
 .work-container-subdiv .main-hero-para{
